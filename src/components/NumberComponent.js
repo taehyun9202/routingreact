@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from '@reach/router';
+
 
 const NumberComponent = (props) => {
     
   return (
       <div>
-        <p>The number is: {props.id}</p>
-        <Link to = "/home">Welcome</Link>
+        {isNaN(props.id) ? <p>The word is: {props.id}</p> :<p>The number is: {props.id}</p>}
+        
       </div>
   );
 }

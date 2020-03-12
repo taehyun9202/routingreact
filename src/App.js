@@ -4,7 +4,6 @@ import './App.css';
 import { Router } from '@reach/router';
 import HomeComponent from './components/HomeComponent';
 import NumberComponent from './components/NumberComponent';
-import WordComponent from './components/WordComponent';
 import CompComponent from './components/CompComponent';
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
             <HomeComponent path="/home"/>
-            {isNaN("id") == false ? <NumberComponent path="/:id"/> : <WordComponent path="/:id"/>}
+            <NumberComponent path="/:id"/>
             <CompComponent path="/:id/:fcolor/:bcolor"/>
       </Router>
     </div>

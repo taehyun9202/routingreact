@@ -6,7 +6,7 @@ const HomeComponent = (props) => {
   return (
       <div>
         <p>Welcome</p>
-        {/* {props.id == Number ? <Link to = "/props.id">Welcome</Link>: <Link to = "/{props.id}">Welcome</Link>} */}
+        
 
         
       </div>
